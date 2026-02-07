@@ -29,13 +29,16 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         // Button state
+        // Button state
         if (index === 0) {
             prevBtn.style.display = 'none';
+            nextBtn.style.display = 'block';
             nextBtn.textContent = '시작하기 ❤️';
         } else if (index === pages.length - 1) {
-            nextBtn.style.display = 'none'; // End of nav
+            nextBtn.style.display = 'block'; // Ensure it's shown
             prevBtn.style.display = 'block';
             prevBtn.textContent = '이전';
+            nextBtn.textContent = '처음으로 🔄'; // Change text to Restart
         } else {
             prevBtn.style.display = 'block';
             nextBtn.style.display = 'block';
@@ -60,9 +63,12 @@ document.addEventListener('DOMContentLoaded', () => {
             audioStarted = true;
         }
 
-        // 2. Navigate to next page
+        // 2. Navigation Logic
         if (currentPage < pages.length - 1) {
             showPage(currentPage + 1);
+        } else {
+            // On last page, go back to first page
+            showPage(0);
         }
     });
 
