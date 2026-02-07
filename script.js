@@ -234,4 +234,18 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
     }
+    // Audio Player Toggle
+    const togglePlayerBtn = document.getElementById('togglePlayerBtn');
+    const audioPlayer = document.getElementById('audioPlayer');
+
+    if (togglePlayerBtn && audioPlayer) {
+        togglePlayerBtn.addEventListener('click', () => {
+            audioPlayer.classList.toggle('minimized');
+            if (audioPlayer.classList.contains('minimized')) {
+                togglePlayerBtn.textContent = '🎵'; // Music icon when minimized
+            } else {
+                togglePlayerBtn.textContent = '🔽'; // Down arrow when open
+            }
+        });
+    }
 });
