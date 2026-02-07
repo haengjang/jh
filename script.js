@@ -1,3 +1,17 @@
+// Global Toggle Function for robustness
+window.toggleAudioPlayer = function () {
+    const audioPlayer = document.getElementById('audioPlayer');
+    const btn = document.getElementById('togglePlayerBtn');
+    if (audioPlayer && btn) {
+        audioPlayer.classList.toggle('minimized');
+        if (audioPlayer.classList.contains('minimized')) {
+            btn.textContent = '🎵';
+        } else {
+            btn.textContent = '🔽';
+        }
+    }
+};
+
 document.addEventListener('DOMContentLoaded', () => {
     const pages = document.querySelectorAll('.page');
     const prevBtn = document.getElementById('prevBtn');
@@ -32,7 +46,21 @@ document.addEventListener('DOMContentLoaded', () => {
         currentPage = index;
     }
 
+    // Start button logic (Handles Audio + Navigation)
     nextBtn.addEventListener('click', () => {
+        // 1. Play Audio on first click
+        if (!audioStarted && audio) {
+            // Check if audio context is allowed
+            const playPromise = audio.play();
+            if (playPromise !== undefined) {
+                playPromise.then(() => {
+                    playerPlayBtn.textContent = '❚❚';
+                }).catch(e => console.log("Audio play prevented:", e));
+            }
+            audioStarted = true;
+        }
+
+        // 2. Navigate to next page
         if (currentPage < pages.length - 1) {
             showPage(currentPage + 1);
         }
@@ -53,19 +81,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const progressBar = document.getElementById('progressBar');
     const volumeBar = document.getElementById('volumeBar');
     let audioStarted = false;
-
-    // Start button logic
-    nextBtn.addEventListener('click', () => {
-        if (!audioStarted && audio) {
-            audio.play().then(() => {
-                playerPlayBtn.textContent = '❚❚';
-            }).catch(e => console.log("Audio play failed (interaction needed):", e));
-            audioStarted = true;
-        }
-        if (currentPage < pages.length - 1) {
-            showPage(currentPage + 1);
-        }
-    });
 
     // Player Play/Pause
     playerPlayBtn.addEventListener('click', () => {

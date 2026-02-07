@@ -458,6 +458,26 @@ button:hover {
     h1 {
         font-size: 2.5rem;
     }
+
+    /* Mobile Letter Section Fix */
+    .letter-section {
+        width: 90%;
+        padding: 20px;
+        font-size: 1.2rem;
+        /* Reduced from 2rem */
+        line-height: 1.6;
+    }
+
+    .letter-section h2 {
+        font-size: 1.5rem;
+        /* Reduced from 2.5rem */
+        margin-bottom: 15px;
+    }
+
+    .letter-from {
+        font-size: 1.3rem;
+        margin-top: 20px;
+    }
 }
 
 /* Audio Player */
@@ -504,26 +524,35 @@ button:hover {
 
 .toggle-player-btn {
     position: absolute;
-    top: -35px;
+    top: -40px;
+    /* More distinct */
     right: 20px;
     background: white;
-    border: 1px solid #ffd1ff;
+    border: 1px solid #ff9a9e;
+    /* Pink border */
     border-bottom: none;
-    padding: 5px 15px;
+    padding: 8px 15px;
+    /* Bigger touch target */
     border-radius: 15px 15px 0 0;
     cursor: pointer;
     font-size: 1.2rem;
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
-    z-index: 101;
+    z-index: 2002;
+    /* Extremely high z-index */
     pointer-events: auto;
-    transition: background 0.2s;
+    transition: background 0.2s, transform 0.2s;
+}
+
+.toggle-player-btn:hover {
+    background: #fff0f5;
+    transform: translateY(-2px);
 }
 
 .audio-player.minimized .toggle-player-btn {
-    top: -35px;
+    top: -40px;
     /* Stay visible */
-    background: #fff0f5;
-    /* Highlight when minimized */
+    background: #ffebee;
+    /* Different color when minimized */
 }
 
 .player-title {
@@ -604,14 +633,20 @@ input[type=range]::-webkit-slider-thumb {
         margin-top: 5px;
     }
 
-    /* Add padding to body or nav-buttons to account for player height */
+    /* Move buttons WAY up to avoid overlap */
     .nav-buttons {
-        bottom: 90px;
-        /* Push buttons up so they are above the player */
-        transition: bottom 0.3s;
+        bottom: 120px !important;
+        z-index: 2002 !important;
+        /* Ensure on top */
     }
 
-    /* When minimized, nav buttons can go lower? Optional */
+    /* Ensure toggle button is clickable */
+    .toggle-player-btn {
+        width: 50px;
+        /* Larger hit area */
+        height: 40px;
+        font-size: 1.5rem;
+    }
 }
 
 /* Lyrics Page Styles */
