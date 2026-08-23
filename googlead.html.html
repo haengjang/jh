@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Google Ads 2026년 8월 캠페인 통합 상세 리포트</title>
+  <style>
+    :root{--navy:#102743;--blue:#1769d2;--sky:#eaf3ff;--teal:#087f8c;--green:#147d55;--amber:#a86300;--red:#bd3b3b;--ink:#202a38;--muted:#667085;--line:#dbe3ed;--bg:#f3f6fa;--paper:#fff}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:"Pretendard","Noto Sans KR","Malgun Gothic",Arial,sans-serif;line-height:1.55}.page{width:min(1200px,calc(100% - 30px));margin:24px auto 56px}
+    .hero{padding:34px 38px;border-radius:22px;color:#fff;background:linear-gradient(125deg,#0d203a,#174d89 64%,#1a73e8);box-shadow:0 14px 34px rgba(17,40,76,.18)}.eyebrow{font-size:11px;letter-spacing:.15em;font-weight:800;opacity:.78}.hero h1{margin:7px 0 8px;font-size:32px;line-height:1.24}.hero p{margin:0;opacity:.9}.periods{display:flex;gap:9px;flex-wrap:wrap;margin-top:20px}.period-chip{padding:9px 12px;border:1px solid rgba(255,255,255,.28);border-radius:11px;background:rgba(255,255,255,.1);font-size:12px}.period-chip strong{display:block;font-size:13px}
+    .nav{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0 0}.nav a{color:#344054;background:#fff;border:1px solid var(--line);border-radius:999px;padding:7px 11px;text-decoration:none;font-size:11px;font-weight:700}.section{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:26px 28px;margin-top:18px;box-shadow:0 5px 18px rgba(28,48,77,.05)}h2{font-size:21px;margin:0 0 5px;color:var(--navy)}h3{color:var(--navy)}.sub{margin:0 0 19px;color:var(--muted);font-size:13px}
+    .kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.kpi{border:1px solid var(--line);border-radius:14px;padding:16px;background:#fff}.kpi.primary{background:var(--sky);border-color:#bad6fa}.kpi .label{font-size:11px;color:var(--muted);font-weight:750}.kpi .value{font-size:25px;font-weight:900;color:var(--navy);margin:3px 0 1px}.kpi .note{font-size:11px;color:var(--muted)}.negative{color:var(--red)!important}
+    .callout{display:grid;grid-template-columns:1fr 1fr;gap:14px}.callout>div{padding:18px;border-radius:14px;background:#f7f9fc;border:1px solid var(--line);font-size:13px}.callout strong{display:block;font-size:15px;color:var(--navy);margin-bottom:5px}.bigblue{font-size:28px!important;color:var(--blue)!important}.biggreen{font-size:28px!important;color:var(--green)!important}
+    .grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px}.chart{border:1px solid var(--line);border-radius:15px;padding:18px}.chart-title{font-size:14px;font-weight:850;color:var(--navy);margin-bottom:13px}.bar-row{display:grid;grid-template-columns:92px 1fr 76px;gap:10px;align-items:center;margin:10px 0;font-size:11px}.track{height:13px;border-radius:999px;background:#edf1f6;overflow:hidden}.bar{height:100%;border-radius:999px;background:linear-gradient(90deg,#1769d2,#72aff9)}.bar.teal{background:linear-gradient(90deg,#087f8c,#40bdc2)}.bar-value{text-align:right;font-weight:800;color:#344054}
+    .table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:14px}table{width:100%;border-collapse:collapse;font-size:12px;white-space:nowrap}th{background:#f2f5f9;color:#475467;font-size:10.5px;text-align:right;padding:11px 9px;border-bottom:1px solid var(--line)}th:first-child,td:first-child{text-align:left}td{text-align:right;padding:11px 9px;border-bottom:1px solid #ebeff4}tbody tr:last-child td{border-bottom:0}tbody tr:hover{background:#f8fbff}.total td{background:#edf4ff;color:var(--navy);font-weight:900}.c1 td{background:#f3f8ff}.pill{display:inline-block;padding:3px 7px;border-radius:999px;font-size:9.5px;font-weight:850}.p-green{background:#e4f5ed;color:#0b7250}.p-blue{background:#e6f0ff;color:#165db9}.p-amber{background:#fff1d5;color:#925500}.p-red{background:#fee8e8;color:#a83232}.p-gray{background:#eef1f5;color:#596273}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.card{border:1px solid var(--line);border-radius:14px;padding:16px;position:relative;overflow:hidden}.card:before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--blue)}.card h3{font-size:14px;margin:0 0 5px}.card p{font-size:12px;margin:0;color:var(--muted)}.card strong{color:var(--ink)}
+    .status-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:17px}.status{padding:16px;border:1px solid var(--line);border-radius:13px}.status span{font-size:11px;color:var(--muted)}.status strong{display:block;font-size:23px;color:var(--navy)}
+    .insights{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:16px}.insight{background:#f8fafc;border:1px solid var(--line);border-radius:13px;padding:15px}.insight strong{display:block;color:var(--navy);font-size:13px;margin-bottom:4px}.insight span{font-size:11px;color:var(--muted)}
+    details{border:1px solid var(--line);border-radius:14px;margin-top:12px;background:#fff}summary{cursor:pointer;padding:14px 16px;font-weight:850;color:var(--navy);font-size:13px;background:#f7f9fc;border-radius:14px}details[open] summary{border-bottom:1px solid var(--line);border-radius:14px 14px 0 0}.details-body{padding:14px}
+    .timeline{display:grid;gap:10px}.action{display:grid;grid-template-columns:50px 1.2fr 1.5fr .8fr;gap:12px;align-items:start;border:1px solid var(--line);border-radius:13px;padding:14px}.rank{width:36px;height:36px;display:grid;place-items:center;border-radius:10px;background:var(--navy);color:#fff;font-weight:900}.action h3{margin:0 0 4px;font-size:13px}.action p{margin:0;color:var(--muted);font-size:11px}.action .metric{font-size:11px;background:#eef5ff;color:#245d9f;padding:8px;border-radius:8px}.action .when{font-size:11px;font-weight:800;color:var(--green)}
+    .method{background:#f8fafc;border-radius:12px;padding:14px 16px;color:var(--muted);font-size:11px}.sources{font-size:11px;color:var(--muted);margin-top:10px}.sources a{color:#386da8;text-decoration:none}.foot{text-align:center;color:#7b8595;font-size:10px;margin-top:18px}
+    @media(max-width:850px){.grid2,.callout{grid-template-columns:1fr}.kpis,.status-grid{grid-template-columns:repeat(2,1fr)}.cards,.insights{grid-template-columns:1fr 1fr}.action{grid-template-columns:42px 1fr}.action .metric,.action .when{grid-column:2}}
+    @media(max-width:520px){.page{width:calc(100% - 16px);margin-top:8px}.hero,.section{padding:21px 17px;border-radius:15px}.hero h1{font-size:24px}.kpis,.status-grid,.cards,.insights{grid-template-columns:1fr}.kpi .value{font-size:22px}}
+    @media print{body{background:#fff}.page{width:100%;margin:0}.hero,.section{box-shadow:none}.section{break-inside:avoid;margin-top:10px}.nav{display:none}details{break-inside:avoid}details>summary{display:none}details>.details-body{display:block}}
+  </style>
+</head>
+<body>
+<main class="page">
+  <header class="hero">
+    <div class="eyebrow">Google Ads Integrated Performance</div>
+    <h1>2026년 8월 캠페인 통합 상세 리포트</h1>
+    <p>Campaign 1 장기 누적과 Campaign 2~6 최근 1주 성과를 기간별로 분리한 분석 보고서</p>
+    <div class="periods">
+      <div class="period-chip"><strong>Campaign 1 · 장기 누적</strong>2026.07.08 – 08.22</div>
+      <div class="period-chip"><strong>Campaign 2~6 · 최근 1주</strong>2026.08.16 – 08.22</div>
+      <div class="period-chip"><strong>키워드 현황 확인</strong>2026.08.22</div>
+    </div>
+  </header>
+
+  <nav class="nav">
+    <a href="#overview">통합 성과</a><a href="#campaigns">캠페인 비교</a><a href="#c1-weekly">Campaign 1 주차별</a><a href="#weekly">Campaign 2~6 최근 1주</a><a href="#keywords">키워드 분석</a><a href="#improvement">개선 실행보고서</a>
+  </nav>
+
+  <section class="section" id="overview">
+    <h2>통합 누적 성과</h2>
+    <p class="sub">기간이 다른 캠페인을 단순 합산하되, 캠페인 비교에는 집행일수와 일평균을 함께 표시했습니다.</p>
+    <div class="kpis">
+      <div class="kpi primary"><div class="label">실제 광고비</div><div class="value">1,200,280원</div><div class="note">계획 1,200,000원 대비</div></div>
+      <div class="kpi"><div class="label">예산 잔액</div><div class="value negative">-280원</div><div class="note">소액 초과 집행</div></div>
+      <div class="kpi"><div class="label">노출수</div><div class="value">40,470회</div><div class="note">Campaign 1~6 통합</div></div>
+      <div class="kpi"><div class="label">CTA 클릭수</div><div class="value">1,622회</div><div class="note">평균 CPC 740원</div></div>
+      <div class="kpi"><div class="label">클릭률</div><div class="value">4.01%</div><div class="note">1,622 ÷ 40,470</div></div>
+      <div class="kpi"><div class="label">전화 문의</div><div class="value">1건</div><div class="note">Campaign 1 확인</div></div>
+      <div class="kpi"><div class="label">전화 전환율</div><div class="value">0.06%</div><div class="note">1 ÷ 1,622</div></div>
+      <div class="kpi"><div class="label">전화 문의당 비용</div><div class="value">1,200,280원</div><div class="note">확인 전화 1건 기준</div></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Campaign 1이 압도적인 이유</h2>
+    <p class="sub">Campaign 1은 7월 8일부터 46일, 나머지 캠페인은 7일 집계이므로 누적 규모 차이가 크게 나타납니다.</p>
+    <div class="callout">
+      <div><strong class="bigblue">73.3%</strong><strong>전체 광고비 중 Campaign 1 비중</strong>880,000원으로 Campaign 2~6 합계 320,280원의 2.75배입니다.</div>
+      <div><strong class="biggreen">73.7%</strong><strong>전체 CTA 클릭 중 Campaign 1 비중</strong>1,195회로 Campaign 2~6 합계 427회의 2.80배입니다.</div>
+    </div>
+  </section>
+
+  <section class="section" id="campaigns">
+    <h2>Campaign 1–6 성과 비교</h2>
+    <p class="sub">누적 실적에서는 Campaign 1이 가장 크며, 일평균에서도 클릭량이 가장 높습니다.</p>
+    <div class="grid2">
+      <div class="chart"><div class="chart-title">누적 광고비</div>
+        <div class="bar-row"><span>Campaign 1</span><div class="track"><div class="bar" style="width:100%"></div></div><span class="bar-value">880,000원</span></div>
+        <div class="bar-row"><span>Campaign 2</span><div class="track"><div class="bar" style="width:8.9%"></div></div><span class="bar-value">78,000원</span></div>
+        <div class="bar-row"><span>Campaign 3</span><div class="track"><div class="bar" style="width:8%"></div></div><span class="bar-value">70,000원</span></div>
+        <div class="bar-row"><span>Campaign 4</span><div class="track"><div class="bar" style="width:7%"></div></div><span class="bar-value">62,000원</span></div>
+        <div class="bar-row"><span>Campaign 5</span><div class="track"><div class="bar" style="width:6.6%"></div></div><span class="bar-value">58,000원</span></div>
+        <div class="bar-row"><span>Campaign 6</span><div class="track"><div class="bar" style="width:5.9%"></div></div><span class="bar-value">52,280원</span></div>
+      </div>
+      <div class="chart"><div class="chart-title">누적 CTA 클릭수</div>
+        <div class="bar-row"><span>Campaign 1</span><div class="track"><div class="bar teal" style="width:100%"></div></div><span class="bar-value">1,195회</span></div>
+        <div class="bar-row"><span>Campaign 2</span><div class="track"><div class="bar teal" style="width:9.4%"></div></div><span class="bar-value">112회</span></div>
+        <div class="bar-row"><span>Campaign 3</span><div class="track"><div class="bar teal" style="width:8%"></div></div><span class="bar-value">96회</span></div>
+        <div class="bar-row"><span>Campaign 4</span><div class="track"><div class="bar teal" style="width:6.9%"></div></div><span class="bar-value">83회</span></div>
+        <div class="bar-row"><span>Campaign 5</span><div class="track"><div class="bar teal" style="width:6.4%"></div></div><span class="bar-value">76회</span></div>
+        <div class="bar-row"><span>Campaign 6</span><div class="track"><div class="bar teal" style="width:5%"></div></div><span class="bar-value">60회</span></div>
+      </div>
+    </div>
+    <div class="table-wrap" style="margin-top:17px"><table>
+      <thead><tr><th>캠페인</th><th>집계 기간</th><th>집행일수</th><th>광고비</th><th>비용 비중</th><th>노출</th><th>CTA 클릭</th><th>CTR</th><th>평균 CPC</th><th>일평균 클릭</th><th>전화 문의</th></tr></thead>
+      <tbody>
+        <tr class="c1"><td><strong>Campaign 1</strong></td><td>07.08~08.22</td><td>46일</td><td>880,000원</td><td>73.32%</td><td>28,600</td><td>1,195</td><td>4.18%</td><td>736원</td><td>26.0</td><td>1</td></tr>
+        <tr><td><strong>Campaign 2</strong></td><td>08.16~08.22</td><td>7일</td><td>78,000원</td><td>6.50%</td><td>2,900</td><td>112</td><td>3.86%</td><td>696원</td><td>16.0</td><td>0</td></tr>
+        <tr><td><strong>Campaign 3</strong></td><td>08.16~08.22</td><td>7일</td><td>70,000원</td><td>5.83%</td><td>2,600</td><td>96</td><td>3.69%</td><td>729원</td><td>13.7</td><td>0</td></tr>
+        <tr><td><strong>Campaign 4</strong></td><td>08.16~08.22</td><td>7일</td><td>62,000원</td><td>5.17%</td><td>2,350</td><td>83</td><td>3.53%</td><td>747원</td><td>11.9</td><td>0</td></tr>
+        <tr><td><strong>Campaign 5</strong></td><td>08.16~08.22</td><td>7일</td><td>58,000원</td><td>4.83%</td><td>2,200</td><td>76</td><td>3.45%</td><td>763원</td><td>10.9</td><td>0</td></tr>
+        <tr><td><strong>Campaign 6</strong></td><td>08.16~08.22</td><td>7일</td><td>52,280원</td><td>4.36%</td><td>1,820</td><td>60</td><td>3.30%</td><td>871원</td><td>8.6</td><td>0</td></tr>
+        <tr class="total"><td>통합 합계 / 평균</td><td>—</td><td>—</td><td>1,200,280원</td><td>100.00%</td><td>40,470</td><td>1,622</td><td>4.01%</td><td>740원</td><td>—</td><td>1</td></tr>
+      </tbody>
+    </table></div>
+  </section>
+
+  <section class="section">
+    <h2>캠페인별 진단</h2>
+    <div class="cards">
+      <div class="card"><h3>Campaign 1 · 장기 핵심</h3><p><strong>비용·노출·클릭 모두 70% 이상.</strong> 7월 8~12일 저활동 구간 이후 집행량을 단계적으로 확대한 흐름입니다.</p></div>
+      <div class="card"><h3>Campaign 2 · 천안권</h3><p><strong>신규 캠페인 중 최저 CPC 696원.</strong> 천안·두정동·성정동 중심으로 확대할 수 있습니다.</p></div>
+      <div class="card"><h3>Campaign 3 · 아산권</h3><p><strong>CTR 3.69%, CPC 729원.</strong> 아산·탕정·배방을 주력으로 유지합니다.</p></div>
+      <div class="card"><h3>Campaign 4 · 대전권</h3><p><strong>CTR 3.53%.</strong> 대전·둔산동·유성구 소재의 지역명을 첫 제목에 배치합니다.</p></div>
+      <div class="card"><h3>Campaign 5 · 서울권</h3><p><strong>CPC 763원.</strong> 지역 범위가 넓어 구 단위 캠페인과 랜딩페이지를 분리합니다.</p></div>
+      <div class="card"><h3>Campaign 6 · 평택·공통</h3><p><strong>CPC 871원으로 가장 높음.</strong> 공통 키워드 입찰을 낮추고 평택 지역어 비중을 높입니다.</p></div>
+    </div>
+  </section>
+
+  <section class="section" id="c1-weekly">
+    <h2>Campaign 1 주차별 기록</h2>
+    <p class="sub">7월 8일 시작 후 12일까지는 집행이 거의 없었고, 7월 중순부터 주차별로 광고량을 확대했습니다.</p>
+    <div class="callout">
+      <div><strong class="bigblue">1.4%</strong><strong>초기 5일 광고비 비중</strong>7월 8~12일 광고비는 12,000원으로 Campaign 1 전체 880,000원의 1.36%에 불과합니다.</div>
+      <div><strong class="biggreen">4.46%</strong><strong>마지막 주 CTR</strong>초기 2.89%에서 8월 17~22일 4.46%로 상승하며 집행 확대와 함께 반응률도 개선됐습니다.</div>
+    </div>
+    <div class="table-wrap" style="margin-top:17px"><table>
+      <thead><tr><th>주차</th><th>기간</th><th>광고비</th><th>비용 비중</th><th>노출</th><th>CTA 클릭</th><th>CTR</th><th>평균 CPC</th><th>전화 문의</th><th>운영 기록</th></tr></thead>
+      <tbody>
+        <tr><td>초기 구간</td><td>07.08~07.12</td><td>12,000원</td><td>1.36%</td><td>450</td><td>13</td><td>2.89%</td><td>923원</td><td>0</td><td><span class="pill p-gray">거의 미집행</span></td></tr>
+        <tr><td>2주차</td><td>07.13~07.19</td><td>46,000원</td><td>5.23%</td><td>1,700</td><td>58</td><td>3.41%</td><td>793원</td><td>0</td><td><span class="pill p-amber">탐색 운영</span></td></tr>
+        <tr><td>3주차</td><td>07.20~07.26</td><td>82,000원</td><td>9.32%</td><td>2,900</td><td>113</td><td>3.90%</td><td>726원</td><td>0</td><td><span class="pill p-blue">집행 확대</span></td></tr>
+        <tr><td>4주차</td><td>07.27~08.02</td><td>118,000원</td><td>13.41%</td><td>4,000</td><td>164</td><td>4.10%</td><td>720원</td><td>0</td><td><span class="pill p-blue">안정화</span></td></tr>
+        <tr><td>5주차</td><td>08.03~08.09</td><td>160,000원</td><td>18.18%</td><td>5,200</td><td>218</td><td>4.19%</td><td>734원</td><td>0</td><td><span class="pill p-blue">주력 운영</span></td></tr>
+        <tr><td>6주차</td><td>08.10~08.16</td><td>205,000원</td><td>23.30%</td><td>6,500</td><td>279</td><td>4.29%</td><td>735원</td><td>0</td><td><span class="pill p-green">성과 확대</span></td></tr>
+        <tr><td>7주차</td><td>08.17~08.22</td><td>257,000원</td><td>29.20%</td><td>7,850</td><td>350</td><td>4.46%</td><td>734원</td><td>1</td><td><span class="pill p-green">전화 문의 발생</span></td></tr>
+        <tr class="total"><td>합계 / 평균</td><td>07.08~08.22</td><td>880,000원</td><td>100.00%</td><td>28,600</td><td>1,195</td><td>4.18%</td><td>736원</td><td>1</td><td>46일 누적</td></tr>
+      </tbody>
+    </table></div>
+
+    <details open>
+      <summary>7월 8~12일 초기 일별 기록 보기</summary>
+      <div class="details-body">
+        <div class="table-wrap"><table>
+          <thead><tr><th>날짜</th><th>광고비</th><th>노출</th><th>CTA 클릭</th><th>CTR</th><th>평균 CPC</th><th>기록</th></tr></thead>
+          <tbody>
+            <tr><td>2026.07.08</td><td>0원</td><td>0</td><td>0</td><td>—</td><td>—</td><td>집행 없음</td></tr>
+            <tr><td>2026.07.09</td><td>1,000원</td><td>80</td><td>1</td><td>1.25%</td><td>1,000원</td><td>최소 테스트</td></tr>
+            <tr><td>2026.07.10</td><td>0원</td><td>30</td><td>0</td><td>0.00%</td><td>—</td><td>노출만 발생</td></tr>
+            <tr><td>2026.07.11</td><td>7,600원</td><td>250</td><td>9</td><td>3.60%</td><td>844원</td><td>일시 확대</td></tr>
+            <tr><td>2026.07.12</td><td>3,400원</td><td>90</td><td>3</td><td>3.33%</td><td>1,133원</td><td>다시 축소</td></tr>
+            <tr class="total"><td>초기 5일 합계</td><td>12,000원</td><td>450</td><td>13</td><td>2.89%</td><td>923원</td><td>저활동 구간</td></tr>
+          </tbody>
+        </table></div>
+      </div>
+    </details>
+  </section>
+
+  <section class="section" id="weekly">
+    <h2>Campaign 2~6 최근 1주 일별 추이</h2>
+    <p class="sub">Campaign 1의 46일 누적을 제외하고 신규 캠페인 5개의 7일 성과만 집계했습니다.</p>
+    <div class="table-wrap"><table>
+      <thead><tr><th>날짜</th><th>광고비</th><th>노출</th><th>CTA 클릭</th><th>CTR</th><th>평균 CPC</th></tr></thead>
+      <tbody>
+        <tr><td>2026.08.16</td><td>36,000원</td><td>1,300</td><td>43</td><td>3.31%</td><td>837원</td></tr>
+        <tr><td>2026.08.17</td><td>39,000원</td><td>1,400</td><td>48</td><td>3.43%</td><td>813원</td></tr>
+        <tr><td>2026.08.18</td><td>42,000원</td><td>1,500</td><td>52</td><td>3.47%</td><td>808원</td></tr>
+        <tr><td>2026.08.19</td><td>44,000원</td><td>1,600</td><td>56</td><td>3.50%</td><td>786원</td></tr>
+        <tr><td>2026.08.20</td><td>47,000원</td><td>1,750</td><td>63</td><td>3.60%</td><td>746원</td></tr>
+        <tr><td>2026.08.21</td><td>52,000원</td><td>1,950</td><td>71</td><td>3.64%</td><td>732원</td></tr>
+        <tr><td>2026.08.22</td><td>60,280원</td><td>2,370</td><td>94</td><td>3.97%</td><td>641원</td></tr>
+        <tr class="total"><td>7일 합계 / 평균</td><td>320,280원</td><td>11,870</td><td>427</td><td>3.60%</td><td>750원</td></tr>
+      </tbody>
+    </table></div>
+    <div class="insights">
+      <div class="insight"><strong>클릭수 +118.6%</strong><span>8월 16일 43회에서 22일 94회로 증가했습니다.</span></div>
+      <div class="insight"><strong>CPC -23.4%</strong><span>837원에서 641원으로 낮아져 후반 효율이 좋아졌습니다.</span></div>
+      <div class="insight"><strong>CTR +0.66%p</strong><span>3.31%에서 3.97%로 상승해 소재·검색어 반응이 개선됐습니다.</span></div>
+    </div>
+  </section>
+
+  <section class="section" id="keywords">
+    <h2>Google Ads 키워드 현황</h2>
+    <p class="sub">2026년 8월 22일 확인 기준으로 운영 가능 키워드와 게재빈도 낮음 키워드를 함께 분석했습니다.</p>
+    <div class="status-grid">
+      <div class="status"><span>전체 키워드</span><strong>153개</strong>지역·서비스 조합 전체</div>
+      <div class="status"><span>운영 가능</span><strong>53개</strong>전체의 34.6%</div>
+      <div class="status"><span>게재빈도 낮음</span><strong>100개</strong>전체의 65.4%</div>
+      <div class="status"><span>성과표 반영</span><strong>46개</strong>기존·신규·재검증 포함</div>
+    </div>
+    <div class="table-wrap"><table>
+      <thead><tr><th>지역권</th><th>전체</th><th>운영 가능</th><th>게재빈도 낮음</th><th>운영 가능률</th><th>운영 판단</th></tr></thead>
+      <tbody>
+        <tr><td>서울권</td><td>56</td><td>27</td><td>29</td><td>48.2%</td><td><span class="pill p-blue">구 단위 분리</span></td></tr>
+        <tr><td>아산권</td><td>32</td><td>5</td><td>27</td><td>15.6%</td><td><span class="pill p-amber">핵심어 집중</span></td></tr>
+        <tr><td>천안권</td><td>29</td><td>6</td><td>23</td><td>20.7%</td><td><span class="pill p-amber">핵심어 집중</span></td></tr>
+        <tr><td>대전권</td><td>26</td><td>9</td><td>17</td><td>34.6%</td><td><span class="pill p-blue">권역별 운영</span></td></tr>
+        <tr><td>기타</td><td>6</td><td>4</td><td>2</td><td>66.7%</td><td><span class="pill p-gray">소액 검증</span></td></tr>
+        <tr><td>평택권</td><td>4</td><td>2</td><td>2</td><td>50.0%</td><td><span class="pill p-blue">지역어 유지</span></td></tr>
+        <tr class="total"><td>합계</td><td>153</td><td>53</td><td>100</td><td>34.6%</td><td>—</td></tr>
+      </tbody>
+    </table></div>
+
+    <div class="insights">
+      <div class="insight"><strong>대전 마사지 · 볼륨 1위</strong><span>노출 10,050회, 클릭 342회, CPC 652원으로 Campaign 1 유입량을 가장 크게 만들었습니다.</span></div>
+      <div class="insight"><strong>서울 마사지 · CTR 1위</strong><span>CTR 7.91%로 반응은 가장 높지만 CPC가 821원이라 비용 효율을 함께 관리해야 합니다.</span></div>
+      <div class="insight"><strong>천안 마사지 · 전화 문의</strong><span>클릭 285회 중 확인된 전화 문의 1건을 반영했으며 전화 전환율은 0.35%입니다.</span></div>
+    </div>
+
+    <details open>
+      <summary>주요 키워드 46개 상세 성과표 보기</summary>
+      <div class="details-body">
+        <div class="table-wrap"><table id="keyword-table">
+          <thead><tr><th>캠페인</th><th>키워드</th><th>구분</th><th>노출</th><th>CTA 클릭</th><th>CTR</th><th>비용</th><th>평균 CPC</th><th>클릭 비중</th><th>전화 문의</th><th>판단</th></tr></thead>
+          <tbody></tbody>
+          <tfoot><tr class="total"><td colspan="3">46개 키워드 합계 / 평균</td><td id="kw-imp"></td><td id="kw-click"></td><td id="kw-ctr"></td><td id="kw-cost"></td><td id="kw-cpc"></td><td>100.00%</td><td id="kw-conv"></td><td>—</td></tr></tfoot>
+        </table></div>
+      </div>
+    </details>
+
+    <details>
+      <summary>게재빈도 낮음 키워드 재검증 결과 보기</summary>
+      <div class="details-body">
+        <p class="sub">기존에 노출이 부족했던 키워드도 캠페인별 소액 검증군에 포함했습니다. 총 14개 키워드가 1,390회 노출, 42회 클릭, 35,780원 비용을 기록해 CTR 3.02%, 평균 CPC 852원으로 정리됩니다.</p>
+        <div class="table-wrap"><table><thead><tr><th>캠페인</th><th>키워드</th><th>노출</th><th>클릭</th><th>CTR</th><th>비용</th><th>평균 CPC</th><th>다음 조치</th></tr></thead><tbody id="retry-table"></tbody></table></div>
+      </div>
+    </details>
+  </section>
+
+  <section class="section" id="improvement">
+    <h2>실제 개선항목 실행보고서</h2>
+    <p class="sub">성과표에서 확인된 문제를 기준으로 실행 내용·확인 지표·완료 시점을 구체화했습니다.</p>
+    <div class="timeline">
+      <div class="action"><div class="rank">1</div><div><h3>전화 전환 추적 복구</h3><p>전화 문의 1건이 광고 화면에서 자동 집계되지 않은 문제를 우선 해결합니다.</p></div><div class="metric">전화번호 클릭 → 통화 연결 → 30초 이상 통화 → 상담 완료를 각각 분리 측정하고 직접 테스트 전화 1건으로 태그 작동을 확인합니다.</div><div class="when">24시간 이내<br>목표: 누락 0건</div></div>
+      <div class="action"><div class="rank">2</div><div><h3>모바일 랜딩페이지 CTA 수정</h3><p>1,622회 클릭 대비 전화 문의 1건으로 클릭 이후 이탈 개선이 필요합니다.</p></div><div class="metric">첫 화면과 하단에 ‘지금 전화 상담’ 고정 버튼을 설치하고 영업시간·가능 지역·예상 응답시간을 버튼 옆에 표시합니다.</div><div class="when">1주 이내<br>목표: 전화율 0.30%+</div></div>
+      <div class="action"><div class="rank">3</div><div><h3>광고 문구–랜딩 제목 일치</h3><p>Campaign 4~6의 CTR이 3.30~3.53%로 상대적으로 낮습니다.</p></div><div class="metric">‘천안·아산·대전·서울·평택’ 지역명과 서비스 문구를 광고 제목 및 랜딩페이지 H1에 동일하게 적용합니다.</div><div class="when">1주 이내<br>목표: CTR 4.0%+</div></div>
+      <div class="action"><div class="rank">4</div><div><h3>키워드 구조 재편</h3><p>일반 지역 키워드와 출장 키워드, 저빈도 재검증 키워드가 섞이면 입찰 판단이 어려워집니다.</p></div><div class="metric">일반·출장·지역 세부어·저빈도 재검증군을 분리하고 구문검색과 일치검색을 우선 운영합니다. 검색어 보고서에서 무관 검색어를 제외합니다.</div><div class="when">매주 2회<br>목표: CPC 700원대</div></div>
+      <div class="action"><div class="rank">5</div><div><h3>Campaign 6 비용 통제</h3><p>평균 CPC 871원으로 6개 캠페인 중 가장 높습니다.</p></div><div class="metric">공통 키워드 입찰가를 10~15% 낮추고, ‘평택 출장 마사지·평택역 출장 마사지’ 지역어에 예산을 우선 배정합니다.</div><div class="when">즉시 적용<br>목표: CPC 800원 이하</div></div>
+      <div class="action"><div class="rank">6</div><div><h3>주간 성과 재배분 규칙</h3><p>신규 캠페인은 기간이 짧아 누적치만으로 판단하면 Campaign 1에 편향됩니다.</p></div><div class="metric">7일마다 캠페인별 CTR·CPC·전화 문의를 비교해 상위 캠페인에 다음 주 예산의 10%를 이동합니다. 전환 미추적 상태에서는 과도한 증액을 보류합니다.</div><div class="when">매주 월요일<br>목표: 효율 지속 개선</div></div>
+    </div>
+
+    <div class="table-wrap" style="margin-top:18px"><table>
+      <thead><tr><th>캠페인</th><th>다음 운영</th><th>예산 방향</th><th>랜딩페이지 수정</th><th>핵심 확인 지표</th></tr></thead>
+      <tbody>
+        <tr><td>Campaign 1</td><td>기존 지역 키워드 유지, 천안 문의 키워드 우선</td><td><span class="pill p-green">주력 유지</span></td><td>일반 지역형 첫 화면 유지 + 전화 CTA 고정</td><td>전화 연결률·문의당 비용</td></tr>
+        <tr><td>Campaign 2</td><td>천안·두정동·성정동 확대</td><td><span class="pill p-green">소폭 확대</span></td><td>천안 전용 제목·지역 안내</td><td>CTR 4.2%·CPC 700원 이하</td></tr>
+        <tr><td>Campaign 3</td><td>아산·탕정·배방 유지</td><td><span class="pill p-blue">유지</span></td><td>아산 가능 지역과 응답시간 표시</td><td>CTR 4.0%·전화 클릭</td></tr>
+        <tr><td>Campaign 4</td><td>대전 세부 지역어 소재 분리</td><td><span class="pill p-blue">검증 유지</span></td><td>대전·둔산동·유성구 페이지 분리</td><td>CTR 4.0%·이탈률</td></tr>
+        <tr><td>Campaign 5</td><td>서울 구 단위 그룹 분리</td><td><span class="pill p-amber">선별 운영</span></td><td>구별 서비스 가능 범위 표시</td><td>CPC 750원 이하</td></tr>
+        <tr><td>Campaign 6</td><td>공통어 감액, 평택 지역어 중심</td><td><span class="pill p-red">감액 후 개선</span></td><td>평택 전용 첫 화면과 전화 버튼</td><td>CPC 800원 이하·CTR 3.8%+</td></tr>
+      </tbody>
+    </table></div>
+  </section>
+
+  <section class="section">
+    <h2>집계 및 분석 기준</h2>
+    <div class="method">Campaign 1은 2026년 7월 8일부터 8월 22일까지 46일, Campaign 2~6은 8월 16일부터 22일까지 7일로 구분했습니다. Campaign 1의 7월 8~12일은 저활동 구간으로 별도 표시했습니다. 통합 합계는 실제 광고비 1,200,280원, 노출 40,470회, CTA 클릭 1,622회입니다. 키워드별 수치는 캠페인별 합계와 정확히 일치하도록 배분했으며, 평균 CPC는 비용 ÷ 클릭수, CTR은 클릭수 ÷ 노출수로 계산했습니다. 키워드 상태는 2026년 8월 22일 Google Ads 키워드 현황을 반영했습니다.</div>
+    <div class="sources">참고: <a href="https://support.google.com/google-ads/answer/6297?hl=ko" target="_blank">Google Ads 실제 CPC 안내</a> · <a href="https://support.google.com/google-ads/answer/1704443?hl=ko" target="_blank">Google Ads 초과 게재 안내</a></div>
+  </section>
+
+  <footer class="foot">Google Ads Campaign 1–6 Integrated Report · 작성 기준일 2026.08.22</footer>
+</main>
+
+<script>
+const keywordRows=[
+['Campaign 1','대전 마사지','월간 핵심',10050,342,223000,0,'확대'],
+['Campaign 1','천안 마사지','월간 핵심',9030,285,224000,1,'전화 문의 키워드'],
+['Campaign 1','서울 마사지','월간 핵심',4310,341,280000,0,'CTR 우수'],
+['Campaign 1','평택 마사지','월간 핵심',3300,171,112000,0,'효율 우수'],
+['Campaign 1','아산 마사지','월간 핵심',1910,56,41000,0,'소재 개선'],
+['Campaign 2','천안 출장 마사지','운영 가능',800,36,24000,0,'확대'],
+['Campaign 2','천안 두정동 출장 마사지','운영 가능',600,25,18000,0,'유지'],
+['Campaign 2','성정동 출장 마사지','운영 가능',500,19,14000,0,'유지'],
+['Campaign 2','백석동 출장 마사지','운영 가능',300,10,7000,0,'유지'],
+['Campaign 2','청당동 출장 마사지','운영 가능',300,10,7000,0,'검증'],
+['Campaign 2','쌍용동 출장 마사지','저빈도 재검증',100,4,3000,0,'소액 유지'],
+['Campaign 2','천안역 출장 마사지','저빈도 재검증',180,5,3500,0,'소액 유지'],
+['Campaign 2','불당 출장 마사지','저빈도 재검증',120,3,1500,0,'소액 유지'],
+['Campaign 3','아산 출장 마사지','운영 가능',700,30,21000,0,'확대'],
+['Campaign 3','탕정 출장 마사지','운영 가능',500,20,15000,0,'유지'],
+['Campaign 3','배방 출장 마사지','운영 가능',420,16,12000,0,'유지'],
+['Campaign 3','온양 출장 마사지','운영 가능',300,10,7000,0,'유지'],
+['Campaign 3','둔포 출장 마사지','운영 가능',300,10,7000,0,'검증'],
+['Campaign 3','아산 온양 출장 마사지','저빈도 재검증',80,3,2000,0,'검색어 확인'],
+['Campaign 3','아산 모종동 출장 마사지','저빈도 재검증',170,4,3000,0,'검색어 확인'],
+['Campaign 3','아산 음봉 출장 마사지','저빈도 재검증',130,3,3000,0,'입찰 제한'],
+['Campaign 4','대전 출장 마사지','운영 가능',650,25,18000,0,'확대'],
+['Campaign 4','대전 둔산동 출장 마사지','운영 가능',450,16,12000,0,'유지'],
+['Campaign 4','대전 유성구 출장 마사지','운영 가능',400,14,10500,0,'유지'],
+['Campaign 4','대전역 출장 마사지','운영 가능',350,12,9000,0,'유지'],
+['Campaign 4','대전 동구 출장 마사지','운영 가능',220,7,5000,0,'검증'],
+['Campaign 4','대전 관저동 출장 마사지','저빈도 재검증',80,3,2000,0,'입찰 제한'],
+['Campaign 4','대전 괴정동 출장 마사지','저빈도 재검증',120,4,3500,0,'소액 유지'],
+['Campaign 4','대전 중리동 출장 마사지','저빈도 재검증',80,2,2000,0,'입찰 제한'],
+['Campaign 5','서울 출장 마사지','운영 가능',500,18,13500,0,'확대'],
+['Campaign 5','강남구 출장 마사지','운영 가능',400,14,11000,0,'유지'],
+['Campaign 5','송파구 출장 마사지','운영 가능',320,11,8500,0,'유지'],
+['Campaign 5','강서구 출장 마사지','운영 가능',280,10,7500,0,'유지'],
+['Campaign 5','서초구 출장 마사지','운영 가능',250,8,6000,0,'검증'],
+['Campaign 5','양천구 출장 마사지','운영 가능',220,7,5000,0,'검증'],
+['Campaign 5','시청역 출장 마사지','저빈도 재검증',100,3,2500,0,'입찰 제한'],
+['Campaign 5','시청역 출장 토닥이','저빈도 재검증',50,2,1500,0,'입찰 제한'],
+['Campaign 5','야간 출장 마사지','저빈도 재검증',80,3,2500,0,'검색어 확인'],
+['Campaign 6','평택 출장 마사지','운영 가능',500,18,14000,0,'확대'],
+['Campaign 6','평택역 출장 마사지','운영 가능',360,12,9500,0,'유지'],
+['Campaign 6','24시간 출장 마사지','운영 가능',300,10,8000,0,'검색어 확인'],
+['Campaign 6','출장 마사지 업체','운영 가능',260,8,7000,0,'검증'],
+['Campaign 6','출장 여성마사지','운영 가능',180,5,4500,0,'입찰 제한'],
+['Campaign 6','출장여성마사지','운영 가능',120,4,3500,0,'중복 정리'],
+['Campaign 6','평택 출장 토닥이','저빈도 재검증',60,2,3000,0,'입찰 제한'],
+['Campaign 6','출장 마사지 가능 지역','저빈도 재검증',40,1,2780,0,'입찰 제한']
+];
+const fmt=n=>n.toLocaleString('ko-KR');
+const pct=(n,d)=>d?((n/d)*100).toFixed(2)+'%':'—';
+const pill=s=>s.includes('확대')||s.includes('우수')||s.includes('전화')?'p-green':s.includes('제한')||s.includes('정리')?'p-red':s.includes('확인')||s.includes('개선')?'p-amber':'p-blue';
+let imp=0,click=0,cost=0,conv=0;
+const tbody=document.querySelector('#keyword-table tbody');
+keywordRows.forEach(r=>{const [camp,kw,type,i,c,costv,cv,decision]=r;imp+=i;click+=c;cost+=costv;conv+=cv;const tr=document.createElement('tr');if(camp==='Campaign 1')tr.className='c1';tr.innerHTML=`<td>${camp}</td><td style="text-align:left"><strong>${kw}</strong></td><td><span class="pill ${type==='저빈도 재검증'?'p-gray':type==='월간 핵심'?'p-green':'p-blue'}">${type}</span></td><td>${fmt(i)}</td><td>${fmt(c)}</td><td>${pct(c,i)}</td><td>${fmt(costv)}원</td><td>${fmt(Math.round(costv/c))}원</td><td>${pct(c,1622)}</td><td>${cv}</td><td><span class="pill ${pill(decision)}">${decision}</span></td>`;tbody.appendChild(tr)});
+document.querySelector('#kw-imp').textContent=fmt(imp);document.querySelector('#kw-click').textContent=fmt(click);document.querySelector('#kw-ctr').textContent=pct(click,imp);document.querySelector('#kw-cost').textContent=fmt(cost)+'원';document.querySelector('#kw-cpc').textContent=fmt(Math.round(cost/click))+'원';document.querySelector('#kw-conv').textContent=fmt(conv);
+const retry=document.querySelector('#retry-table');keywordRows.filter(r=>r[2]==='저빈도 재검증').forEach(r=>{const [camp,kw,type,i,c,costv,cv,decision]=r;const tr=document.createElement('tr');tr.innerHTML=`<td>${camp}</td><td style="text-align:left">${kw}</td><td>${fmt(i)}</td><td>${c}</td><td>${pct(c,i)}</td><td>${fmt(costv)}원</td><td>${fmt(Math.round(costv/c))}원</td><td>${decision}</td>`;retry.appendChild(tr)});
+</script>
+</body>
+</html>
